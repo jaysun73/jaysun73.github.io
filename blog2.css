@@ -1,0 +1,180 @@
+body{
+    background-color: #252432;
+}
+
+
+
+.leftnav .title{
+    display: block;
+    transform: rotate(270deg);
+    margin-top:20%;
+    margin-left: -60%;
+    font-family: 'Londrina Shadow', cursive;
+/*    font-family: 'Monoton', cursive;*/
+    font-size: 6em;
+    overflow: auto;
+    color:#F2690E;
+    white-space: nowrap;
+    grid-area: title;
+}
+.leftnav .buttonlist{
+    display: block;
+    margin-bottom: 0%;
+    color: #C7CAB9;
+    list-style-type: none;
+    border-style: solid;
+    border-width: 1px; 
+    border-color: #C7CAB9;
+    width: 30%;
+    margin-left: 4%;   
+}
+.leftnav .buttonlist div{
+    padding-bottom: 1.5%;
+    padding-left: 6%;
+}
+.leftnav .buttonlist div a:hover{
+    color: #94A6BF;
+}
+.leftnav{
+    position: fixed;  
+    width: 20%;
+    display:grid;
+    grid-template-rows: 12fr 2fr;
+    grid-template-areas: "title" "ul";
+}
+.navtop{
+    display: none;
+}
+.bg-custom{
+    background-color: #C7CAB9;
+}
+
+@media screen and (max-width:800px){
+    .leftnav{
+        display: none;
+    }
+    .container {
+    width: 120%;
+    position: absolute;
+    right: 1%;
+    left: 1%;
+    top: 10%;
+    }
+    .navtop{
+        display:flex;
+    }
+    
+}
+
+
+
+.container {
+  width: 85%;
+    position: absolute;
+    right:3%;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+.text-muted a {
+  color: #989898;
+}
+
+.text-muted a:hover {
+  color: grey;
+}
+
+.fa a:active, a:hover, a:visited {
+  text-decoration: none;
+}
+
+/* Tool Colors */
+.general {
+  background-color: #252432;
+}
+
+.general .card-title {
+  color: #f3f3f3;
+}
+
+.general .card-text {
+  color: #f3f3f3;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.card-pin:hover .overlay {
+  opacity: .5;
+  border: 5px solid #f3f3f3;
+  transition: ease .5s;
+  background-color: #000000;  
+  cursor: zoom-in;
+}
+
+.more {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  transform: translate(-20%, -20%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.card-pin:hover .card-title {
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.card-pin:hover .more a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.card-pin:hover .download a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social {
+	position: relative;
+	transform: translateY(-50%);
+}
+
+.social .fa {
+  margin: 0 3px;
+}
+
+.active {
+   /* background-color: #4CAF50; */
+    color: white;
+}
+
+
+a {    
+    color: #c7cab9
+}
